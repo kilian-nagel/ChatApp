@@ -1,2 +1,2 @@
 # ChatApp
-Simple web app , that allow to discuss.
+Simple web app , that allows discussions , adding friend and joining groups.
