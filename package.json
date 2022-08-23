@@ -1,0 +1,29 @@
+{
+  "name": "forum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cookie": "^0.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.1",
+    "express-oauth2-jwt-bearer": "^1.1.0",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.19",
+    "npm": "^8.18.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "url": "^0.11.0"
+  }
+}
