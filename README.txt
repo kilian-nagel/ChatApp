@@ -17,9 +17,8 @@ App Structure
 ----------------
 Features
 - Authentification.
-- Send / Received messages
-- Interact with users ( block , add a friend , groups )
-- Manage account ( settings , profile picture )
+- Fetch Album / Music from Spotify API.
+- Manage User profile.
 
 Authentification
 - Auth API

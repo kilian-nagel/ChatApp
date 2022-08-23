@@ -3,11 +3,11 @@ const router = require('express').Router();
 const fs = require('fs');
 const users_database = require('../Models/users.json');
 
-router.get('/Auth',(req,res)=>{
+router.get('/auth',(req,res)=>{
     res.render('asa')
 })
 
-router.post('/Auth',async (req,res)=>{
+router.post('/auth',async (req,res)=>{
     console.log('here')
     // Check if user exists 
     let uid = req.body.uid;
