@@ -4,15 +4,9 @@
 ================ */
 
 const express = require('express');
-const path = require('path');
 const body_parser = require('body-parser');
-const fs = require('fs');
 const cors = require('cors');
-const { auth, requiredScopes } = require('express-oauth2-jwt-bearer');
-const apiAuthRoute = require('./src/Controllers/auth');
-const users_database = './src/Models/users.json';
 const auth_route = require('./src/Routes/auth');
-const { env } = require('process');
 
 /* Parsers 
 =============== */
@@ -29,4 +23,5 @@ app.use(body_parser.urlencoded({extended:false}));
 ================ */
 
 app.use('/auth',auth_route);
+app.use('/')
 app.listen(5000);

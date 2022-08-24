@@ -1,5 +1,7 @@
 
-function login(req,res){
+const fs = require('fs');
+
+function login(req,res,users_db_path){
     console.log('HERE')
     // Check if user exists 
     let uid = req.body.uid;
@@ -23,16 +25,14 @@ function login(req,res){
                     username:req.body.username,
                     mail:req.body.mail,
                     data : {
-                        messages:[],
-                        relations: {
-                            groups:[],
-                            friends:[],
-                            blocked:[]
-                        },
                         profile: {
                             img:req.body.profile,
                             role:'user'
-                        }
+                        },
+                        recents_musics : [],
+                        liked_musics : [],
+                        published_musics : [],
+                        playists : []
                     }
                 }
                 users.push(user);
@@ -40,6 +40,9 @@ function login(req,res){
 
         // Update database
         updateDatabase(users_db_path,JSON.stringify(users,null,'\t'))
+        
+        // End request 
+        res.send('ok')
     })
 }
 
@@ -47,4 +50,8 @@ function updateDatabase(db_path,new_db){
     fs.writeFile(db_path,new_db,(err)=>{
         if(err) throw err;
     })
+}
+
+module.exports = {
+    login,
 }
