@@ -25,4 +25,4 @@ app.use(body_parser.urlencoded({extended:false}));
 
 app.use('/auth',auth_route);
 app.use('/database',database_route)
-app.listen(5000);
+app.listen(5000)
