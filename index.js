@@ -7,6 +7,7 @@ const express = require('express');
 const body_parser = require('body-parser');
 const cors = require('cors');
 const auth_route = require('./src/Routes/auth');
+const database_route = require('./src/Routes/database')
 
 /* Parsers 
 =============== */
@@ -23,5 +24,5 @@ app.use(body_parser.urlencoded({extended:false}));
 ================ */
 
 app.use('/auth',auth_route);
-app.use('/')
+app.use('/database',database_route)
 app.listen(5000);
