@@ -1,1 +1,17 @@
-[{"data":{"messages":[],"relations":{"groups":[],"friends":[],"blocked":[]},"profile":{"role":"user"}}},{"uid":"google-oauth2|118171829823269176911","username":"K!L!AN - NageL","mail":"nagelkilian05@gmail.com","data":{"messages":[],"relations":{"groups":[],"friends":[],"blocked":[]},"profile":{"img":"https://lh3.googleusercontent.com/a-/AFdZucqpikqpbZMbKly48pMD9AohsWO_wA4ofkXNavsBzg=s96-c","role":"user"}}}]
+[
+	{
+		"uid": "google-oauth2|118171829823269176911",
+		"username": "K!L!AN - NageL",
+		"mail": "nagelkilian05@gmail.com",
+		"data": {
+			"profile": {
+				"img": "https://lh3.googleusercontent.com/a-/AFdZucqpikqpbZMbKly48pMD9AohsWO_wA4ofkXNavsBzg=s96-c",
+				"role": "user"
+			},
+			"recents_musics": [],
+			"liked_musics": [],
+			"published_musics": [],
+			"playists": []
+		}
+	}
+]

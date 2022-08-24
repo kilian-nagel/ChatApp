@@ -25,7 +25,7 @@ function App() {
 function callAuthEndpoint(user){
   if(user !== undefined){
     console.log(user)
-    axios.post('http://localhost:5000/Auth',{
+    axios.post('http://localhost:5000/auth/login',{
       uid:user.sub,
       username:user.name,
       mail:user.email,
