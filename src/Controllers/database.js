@@ -1,8 +1,8 @@
 
 const fs = require('fs');
-const users_db_path = require('../../global').users_database;
 
-async function fetchUserData(req,res){
+async function fetchUserData(req,res){  
+    const users_db_path = './../../../Models/users.json'
     fs.readFile(users_db_path,'utf-8',(err,data)=>{
         if(err) throw err;
 

@@ -3,6 +3,7 @@ import React, { Component , useState , useEffect } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from 'axios';
 import LoginButton from './loginButton.jsx';
+import Header from './components/header'
 
 function App() {
   const {loginWithPopup,loginWithRedirect,logout,} = useAuth0();
@@ -14,10 +15,25 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={loginWithPopup}>loginWithPopup</button>
-      <button onClick={loginWithRedirect}>loginWithRedirect</button>
-      <button onClick={logout}>Logout</button>
-      <LoginButton></LoginButton>
+      {
+        isAuthenticated ?
+        
+        <React.Fragment>
+          <Header></Header>
+          <button onClick={loginWithPopup}>loginWithPopup</button>
+          <button onClick={loginWithRedirect}>loginWithRedirect</button>
+          <button onClick={logout}>Logout</button>
+        </React.Fragment>
+
+        :
+
+        <React.Fragment>
+        <button onClick={loginWithPopup}>loginWithPopup</button>
+        <button onClick={loginWithRedirect}>loginWithRedirect</button>
+        <button onClick={logout}>Logout</button>
+        <LoginButton></LoginButton>
+        </React.Fragment> 
+      }
     </div>
   );
 }

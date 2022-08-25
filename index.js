@@ -13,7 +13,9 @@ const database_route = require('./src/Routes/database')
 =============== */
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:'*'
+}));
 app.use(express.json());
 app.set('view engine', 'ejs'); 
 app.use(express.static(__dirname));
