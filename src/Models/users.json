@@ -13,5 +13,20 @@
 			"published_musics": [],
 			"playists": []
 		}
+	},
+	{
+		"uid": "google-oauth2|108677820314655042962",
+		"username": "PerFuZz PsyKotiK",
+		"mail": "zskorpioxfr@gmail.com",
+		"data": {
+			"profile": {
+				"img": "https://lh3.googleusercontent.com/a-/AFdZucqtQITRpVaglx16RN-q68dBYdTqkAVZC51dOOjlTA=s96-c",
+				"role": "user"
+			},
+			"recents_musics": [],
+			"liked_musics": [],
+			"published_musics": [],
+			"playists": []
+		}
 	}
 ]

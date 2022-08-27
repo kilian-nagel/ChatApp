@@ -6,8 +6,9 @@ const database = require('./../Controllers/database');
 router.route('/fetchUserData')
     .post(
         async (req,res)=>{
-            let response = await database.fetchUserData(req,res);
-            res.send(response);
+            database.fetchUserData(req,res)
+            .then(data=>console.log(data))
+            
         })
 
 module.exports = router;

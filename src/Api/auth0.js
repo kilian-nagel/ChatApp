@@ -2,9 +2,9 @@
 const fs = require('fs');
 
 function login(req,res,users_db_path){
-    console.log('HERE')
     // Check if user exists 
     let uid = req.body.uid;
+    console.log('we hERE ??')
         fs.readFile(users_db_path,'utf-8',(err,data)=>{
             if(err) throw err;
             
@@ -16,7 +16,7 @@ function login(req,res,users_db_path){
             }
 
             // If user exists
-            if (user_exist) console.log('user already exists');
+            if (user_exist) {console.log('exists')}
 
             // Create user if it doesnt exists
             if (!user_exist){
